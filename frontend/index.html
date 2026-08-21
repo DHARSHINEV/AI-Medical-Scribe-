@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Medical Scribe</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div>
+        <h1>AI Medical Scribe</h1>
+
+        <p>
+            Ambient Clinical Intelligence Dashboard
+        </p>
+    </div>
+
+    <div class="status">
+        ● SYSTEM ONLINE
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="toolbar">
+
+        <button id="demoButton">
+            ▶ Run Demo
+        </button>
+
+        <button id="analyzeButton">
+            Analyze Transcript
+        </button>
+
+    </section>
+
+
+    <section class="dashboard">
+
+
+        <!-- TRANSCRIPT -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <h2>🎙 Live Transcript</h2>
+
+                <span class="badge">
+                    Speaker Tagged
+                </span>
+
+            </div>
+
+            <textarea
+                id="transcript"
+                placeholder="Enter doctor-patient conversation..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- SOAP -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <h2>📋 SOAP Note</h2>
+
+                <span class="badge">
+                    AI Generated
+                </span>
+
+            </div>
+
+            <div id="soapNote">
+
+                <p class="empty">
+                    Run the demo to generate a SOAP note.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAFETY -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <h2>🛡 Safety & Coding</h2>
+
+            </div>
+
+            <div id="alerts">
+
+                <p class="empty">
+                    No analysis available.
+                </p>
+
+            </div>
+
+            <div id="coding"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENTITIES -->
+
+    <section class="card entities">
+
+        <h2>🧠 Clinical Entities</h2>
+
+        <div id="entities">
+
+            <p class="empty">
+                Clinical entities will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="review">
+
+        <button>
+            🔍 Verify Source
+        </button>
+
+        <button>
+            🌐 Patient Summary
+        </button>
+
+        <button>
+            ✓ Approve Note
+        </button>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        AI Medical Scribe Prototype |
+        Clinician verification required
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
